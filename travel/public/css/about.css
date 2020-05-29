@@ -1,0 +1,890 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: #FAFAFA;
+}
+h4 {
+    font-size: 50px;
+    font-family: "Open Sans";
+    font-style: normal;
+    margin: 0;
+    color: #1C1C1C;
+
+}
+a {
+    color: #1C1C1C;
+    text-decoration: none;
+}
+a:visited {
+    color: #1C1C1C;
+    text-decoration: none;
+}
+
+.logo img{
+    background-color: #ffffff;
+    background-size: cover;
+    border: 0;
+    padding: 0;
+    height: 50px;
+    width: 214px;
+}
+
+.head_text * {
+    line-height: 30px;
+    margin: 0 25px;
+}
+.head {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 80px 18px 80px;
+    color: #1C1C1C;
+    font-family: "Open Sans";
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.head_text {
+    margin-left: auto;
+    align-self: flex-start;
+    padding: 2px 0 0;
+}
+.head_text a {
+    font-size: 24px;
+}
+.head_text button {
+    background-color: #ffffff;
+    background-size: cover;
+    border: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+}
+#btn_logo {
+    background-image: url("../img/travel_logo.png");
+}
+#btn_search {
+    background-image: url("../img/phone.png");
+}
+#btn_menu {
+    background-image: url("../img/menu.png") ;
+    display: none;
+}
+
+
+.first {
+    background: url("../img/About_fon.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.first_content {
+    width: 50%;
+    margin-right: auto;
+    padding: 60px 0 60px 80px;
+    max-width: 1140px;
+}
+.first_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    background: rgba(245,245,245,0.8);
+    padding: 60px;
+}
+
+.first_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 38px 0;
+    width: 100%;
+}
+.first_h4{
+    text-align: center;
+    align-content: center;
+}
+.first_text p {
+    font-family: Montserrat;
+    font-size: 24px;
+    margin: 10px 0;
+    font-style: normal;
+    color: #4F4F4F;
+    width: 95%;
+}
+.first_background a {
+    align-content: center;
+    font-style: normal;
+    font-size: 30px;
+    font-family: Montserrat;
+    padding: 16px 60px;
+    background-color: #98D2E8;
+    color: #1C1C1C;
+    border-radius: 30px;
+    border: 0;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+.body>* {
+    align-self: center;
+}
+.body>div {
+    display: flex;
+    background-color: #F8F8F8;
+    opacity: 0.95;
+    margin: 0;
+}
+
+
+.why {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px;
+    background: url("../img/why_fon.png")  no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+.why h4{
+    color: #FAFAFA;
+}
+.why_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1180px;
+    margin: 48px 0 0;
+    font-family: Montserrat;
+}
+.why_text>div {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.why_text>div>div {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+    margin: 0 20px 0 0;
+    max-width: 48%;
+}
+
+.num_text_p {
+    font-family: Montserrat;
+    display: block;
+    font-size: 18px;
+    margin: 0 0 30px;
+    font-style: normal;
+    color: #FAFAFA;
+}
+.num_p {
+    font-family: Montserrat;
+    display: block;
+    font-size: 22px;
+    margin: 0;
+    font-style: normal;
+    color: #FAFAFA;
+}
+
+.why_text img {
+    display: block;
+    margin: 0 20px;
+    min-width: 100px;
+    height: 100px;
+}
+
+
+
+.friends {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 80px;
+    width: inherit;
+    max-width: 1300px;
+}
+.friends_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 48px 0 0;
+}
+.friends_text>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: inherit;
+    border-width: 5px;
+}
+.friends_text>div>div {
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: inherit;
+    margin: 5px;
+}
+.friends img{
+    /*height: 80px;*/
+    margin: 10px;
+    width: min-content;
+}
+
+.question {
+    background: url("../img/question_fon.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.question_content {
+    width: 50%;
+    margin-right: auto;
+    padding: 60px 0 60px 80px;
+    max-width: 1140px;
+}
+.question_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    background: rgba(245,245,245,0.8);
+    padding: 60px;
+}
+
+.question_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 38px 0;
+    width: 100%;
+}
+.question_h4{
+    align-content: center;
+}
+.question_text p {
+    font-family: Montserrat;
+    font-size: 24px;
+    margin: 10px 0;
+    font-style: normal;
+    color: #4F4F4F;
+    width: 95%;
+}
+.question_background button {
+    align-content: center;
+    font-style: normal;
+    font-size: 30px;
+    font-family: Montserrat;
+    padding: 16px 60px;
+    background-color: #98D2E8;
+    color: #1C1C1C;
+    border-radius: 30px;
+    border: 0;
+}
+
+
+.foot {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 68px 30px 55px;
+}
+.foot_small {
+    display: none;
+}
+.foot_1 {
+}
+.foot_2 {
+}
+.foot a {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: #1C1C1C;
+}
+.foot_1 a {
+    margin: 0 25px;
+}
+.foot_2 a {
+    margin: 0 12px;
+}
+.foot button {
+    background-color: #EFEFEF;
+    border-width: 0;
+    margin: 0 12px;
+    height: 28px;
+    width: 28px;
+}
+#button_t {
+    background: url("../img/telegram.png");
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+#button_e {
+    background: url("../img/mail.png");
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+#button_i {
+    background: url("../img/instagram.png");
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+
+@media (max-width: 1320px) {
+    h4 {
+        font-size: 38px;
+    }
+
+    .head_text * {
+        margin: 0 15px;
+    }
+
+    .head {
+        padding: 18px 45px 18px 60px;
+    }
+
+    .head_text a {
+        font-size: 22px;
+    }
+
+    .head_text button {
+        height: 30px;
+        width: 30px;
+    }
+    .first_content {
+        padding: 40px 0 40px 60px;
+        max-width: 9600px;
+    }
+
+    .first_background {
+        padding: 40px;
+    }
+
+    .first_text {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .first_text p {
+        font-size: 22px;
+    }
+
+    .first_background a {
+        font-size: 26px;
+        padding: 14px 40px;
+    }
+
+
+    .why {
+        padding: 40px 45px;
+    }
+
+    .why_text {
+        max-width: 990px;
+        margin: 32px 0 0;
+    }
+
+    .why_text > div > div {
+        margin: 0 15px 0 0;
+    }
+
+    .num_text_p {
+        font-size: 14px;
+        margin: 0 0 20px;
+    }
+
+    .num_p {
+        font-size: 18px;
+    }
+
+    .why_text img {
+        margin: 0 15px;
+        min-width: 80px;
+        height: 80px;
+    }
+
+    .friends {
+        padding: 40px 60px;
+        max-width: 1080px;
+    }
+
+    .friends_text {
+        margin: 32px 0 0;
+    }
+
+    .friends_text > div {
+        border-width: 3px;
+    }
+
+    .friends_text > div > div {
+        width: 25%;
+        margin: 3px;
+    }
+
+    .first_content {
+        padding: 40px 0 40px 60px;
+        max-width: 9600px;
+    }
+
+    .question_background {
+        padding: 40px;
+    }
+
+    .question_text {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .question_text p {
+        font-size: 22px;
+    }
+
+    .question_background button {
+        font-size: 26px;
+        padding: 14px 40px;
+    }
+
+    .foot {
+        padding: 18px 50px 18px 40px;
+    }
+    .foot a {
+        font-size: 20px;
+    }
+    .foot_1 a {
+        margin: 0 20px;
+    }
+    .foot_2 a {
+        margin: 0 10px;
+    }
+    #button_t {
+        width: 20px;
+        height: 20px;
+    }
+    #button_e {
+        width: 20px;
+        height: 20px;
+    }
+    #button_i {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    h4 {
+        font-size: 36px;
+    }
+
+    .head_text * {
+        margin: 0 10px;
+    }
+
+    .head {
+        padding: 18px 70px 18px 80px;
+    }
+
+    .head_text a {
+        display: none;
+    }
+
+    .head_text button {
+        height: 30px;
+        width: 30px;
+    }
+    #btn_menu {
+        display: inline;
+    }
+
+
+
+    .first_content {
+        width: 100%;
+        margin: 0;
+        align-self: center;
+        padding: 60px 80px;
+        max-width: 880px;
+    }
+    .first_background {
+        align-self: center;
+    }
+    .first_text p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .first_background a {
+        font-size: 24px;
+        padding: 14px 40px;
+    }
+
+
+    .why {
+        background-size: cover;
+        padding: 40px 80px 14px;
+    }
+
+    .why_text {
+        max-width: 720px;
+        margin: 32px 0 0;
+    }
+    .why_text > div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .why_text > div > div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 26px;
+        max-width: 75%;
+    }
+    .why_text img {
+        margin: 0 0 15px;
+        min-width: 125px;
+        height: 125px;
+    }
+    .num_text_p {
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+    }
+    .num_p {
+        text-align: center;
+        font-size: 22px;
+    }
+
+
+
+    .friends {
+        padding: 40px 80px;
+        max-width: 720px;
+    }
+
+    .friends_text {
+        margin: 32px 0 0;
+    }
+
+    .friends_text > div {
+        align-self: center;
+        width: min-content;
+        flex-direction: column;
+        border-width: 3px;
+    }
+
+    .friends_text > div > div {
+        width: 100%;
+        margin: 0 0 5px;
+    }
+
+
+
+    .foot {
+        display: none;
+    }
+    .foot_small {
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        padding: 18px 70px 18px 70px;
+    }
+    .foot_small a {
+        font-family: "Open Sans";
+        font-size: 20px;
+        color: #1C1C1C;
+    }
+    .foot_1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .foot_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+    .foot_1 a {
+        margin: 0 10px;
+    }
+    .foot_2 a {
+    }
+    .foot_small button {
+        background-color: #EFEFEF;
+        border-width: 0;
+        margin: 0 10px;
+        height: 25px;
+        width: 25px;
+    }
+    #button_t_s {
+        background: url("../img/telegram.png");
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+    #button_e_s {
+        background: url("../img/mail.png");
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+    #button_i_s {
+        background: url("../img/instagram.png");
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 758px) {
+    h4 {
+        font-size: 32px;
+    }
+
+
+    .head {
+        padding: 18px 50px 18px 60px;
+    }
+
+
+    .first_content {
+        padding: 40px 60px;
+        max-width: 540px;
+    }
+    .first_text p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .first_background {
+        padding: 30px;
+    }
+    .first_background a {
+        font-size: 22px;
+        padding: 14px 30px;
+    }
+
+
+    .why {
+        padding: 40px 60px 14px;
+    }
+
+    .why_text {
+        max-width: 540px;
+    }
+    .why_text > div > div {
+        max-width: 100%;
+    }
+    .why_text img {
+        margin: 0 0 15px;
+        min-width: 100px;
+        height: 100px;
+    }
+    .num_text_p {
+        text-align: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    .num_p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .friends {
+        padding: 40px 60px;
+        max-width: 540px;
+    }
+
+    .foot {
+        display: none;
+    }
+    .foot_small {
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        padding: 24px 30px 24px 30px;
+    }
+    .foot_small a {
+        font-family: "Open Sans";
+        font-size: 18px;
+        color: #1C1C1C;
+    }
+    .foot_1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .foot_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+    .foot_1 a {
+        margin: 0 10px;
+    }
+    .foot_2 a {
+    }
+    .foot_small button {
+        background-color: #EFEFEF;
+        border-width: 0;
+        margin: 0 12px;
+        height: 24px;
+        width: 24px;
+    }
+    #button_t_s {
+        width: 20px;
+        height: 20px;
+    }
+    #button_e_s {
+        width: 20px;
+        height: 20px;
+    }
+    #button_i_s {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 524px) {
+    h4 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+
+    .head {
+        padding: 18px 10px 18px 20px;
+    }
+
+    .logo img{
+        height: 33px;
+        width: 143px;
+    }
+    .head_text button {
+        height: 20px;
+        width: 20px;
+    }
+
+    .first_content {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+    .first_text {
+        padding: 10px 0;
+    }
+    .first_text p {
+        margin: 5px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .first_background {
+        padding: 15px;
+    }
+    .first_background a {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .why {
+        padding: 30px 20px 1px;
+    }
+
+    .why_text {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .why_text img {
+        margin: 0 0 10px;
+        min-width: 100px;
+        height: 100px;
+    }
+    .num_text_p {
+        text-align: center;
+        font-size: 16px;
+        margin: 0;
+    }
+    .num_p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+
+    .friends {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+    .friends_text {
+        margin: 20px 0;
+    }
+
+    .foot {
+        display: none;
+    }
+    .foot_small {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .foot_small a {
+        font-family: "Open Sans";
+        font-size: 14px;
+        color: #1C1C1C;
+    }
+    .foot_1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .foot_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px 0 0;
+    }
+    .foot_1 a {
+        margin: 0 5px;
+    }
+    .foot_2 a {
+    }
+    .foot_small button {
+        background-color: #EFEFEF;
+        border-width: 0;
+        margin: 0 5px;
+        height: 18px;
+        width: 18px;
+    }
+
+    #button_e_s {
+        display: none;
+    }
+    #button_i_s {
+        display: none;
+    }
+}
